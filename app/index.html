@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Platinum Atlas — GTA VI Trophy Guide & Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-text">
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5 · Offline guide & tracker</p>
+    <h1>Leonida Platinum Atlas</h1>
+    <p class="standfirst">All 55 official trophies with a cited guide for every one, a five-phase platinum roadmap, and the one missable moment flagged before it can bite. Progress saves in your browser — no account, no network.</p>
+  </div>
+  <div class="progress-card">
+    <div class="progress-big"><span id="earned-count">0</span><span class="of"> / 55 earned</span></div>
+    <div class="progress-track"><div id="progress-bar"></div></div>
+    <div class="progress-pct" id="progress-pct">0% to the platinum</div>
+    <ul class="grade-counts" id="grade-counts"></ul>
+  </div>
+</header>
+
+<nav class="toolbar" aria-label="Tracker controls">
+  <div class="tabs" role="tablist">
+    <button type="button" id="tab-tracker" class="tab active" role="tab">Tracker</button>
+    <button type="button" id="tab-roadmap" class="tab" role="tab">Platinum roadmap</button>
+  </div>
+  <input id="search" type="search" placeholder="Search trophies…" aria-label="Search trophies">
+  <div class="chips" id="kind-chips" role="group" aria-label="Filter by kind"></div>
+  <label class="spoiler-toggle"><input type="checkbox" id="spoiler"> Spoiler shield <span class="hint">hides story trophies until earned</span></label>
+  <button type="button" id="export">Export progress</button>
+  <label class="import-btn">Import progress <input id="import" type="file" accept="application/json,.json" hidden></label>
+</nav>
+
+<main id="tracker-view">
+  <section class="list-pane">
+    <p class="list-meta" id="list-meta"></p>
+    <ol class="trophy-list" id="trophy-list"></ol>
+  </section>
+  <aside class="detail-pane" id="detail-pane" aria-live="polite"></aside>
+</main>
+
+<main id="roadmap-view" hidden>
+  <section class="roadmap-intro">
+    <h2>The road to Vice Got a Price!</h2>
+    <p>One playthrough, about 200 hours, difficulty 4/10 — no online trophies, no difficulty trophies, no mission replay. The route below is built from the official trophy descriptions and the cited guides: story first (with the single missable moment grabbed in Chapter 1), then the 100% checklist, then the stranger strands. Estimated times follow PowerPyx's roadmap.</p>
+    <p class="roadmap-alert"><strong>Only one real risk:</strong> Positive Mental Attitude. A meditation at Jason's house in Chapter 1 (after Down to Earth, accept Lucia's invitation on the balcony) may count toward its 18 spots and cannot be repeated once the chapter ends. Everything else can be cleaned up in free-roam after the story.</p>
+  </section>
+  <ol class="phase-list" id="phase-list"></ol>
+</main>
+
+<footer class="colophon">
+  <h2>Sources & method</h2>
+  <p>Trophy names, descriptions and grades are the official PlayStation 5 list, shown exactly as published. Every guide in this atlas is written for this entry and cites its sources beside it; a guide that rests only on the official description says so. Strategy facts (counts, locations, the missable meditation) come from the guides below, consulted while writing — never copied.</p>
+  <ul id="source-list"></ul>
+  <p class="fineprint">Leonida Platinum Atlas is an unofficial fan guide. It is not affiliated with Rockstar Games or PlayStation, and carries no official artwork or logos.</p>
+</footer>
+
+<script type="module" src="src/atlas-main.js"></script>
+</body>
+</html>
